@@ -6,8 +6,8 @@
         "states" : {
           "off" : {},
           "charge" : {
-            "frames" : 3,
-            "cycle" : 1.0,
+            "frames" : 5,
+            "cycle" : 0.6,
             "mode" : "transition",
             "transition" : "chargedLoop",
             "properties" : {
@@ -17,13 +17,13 @@
           },
           "chargedLoop" : {
             "frames" : 3,
-            "cycle" : 0.2,
+            "cycle" : 0.35,
             "mode" : "loop",
             "transition" : "fire"
           },
           "fire" : {
             "frames" : 2,
-            "cycle" : 1.0,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "off"
           }
@@ -93,6 +93,25 @@
             "fire" : {
               "properties" : {
                 "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.25, 0],
+          "transformationGroups" : ["muzzle"],
+          "zLevel" : 1,
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:1.<frame>"
               }
             }
           }

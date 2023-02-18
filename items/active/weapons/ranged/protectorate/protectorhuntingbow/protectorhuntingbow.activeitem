@@ -4,7 +4,7 @@
   "inventoryIcon" : "protectorhuntingbowicon.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "tooltipKind" : "bow",
+  "tooltipKind" : "base",
   "category" : "bow",
   "description" : "A bow made by the Protectorate to hunt during missions",
   "shortdescription" : "Protector's Hunting Bow",
@@ -15,7 +15,7 @@
 
   "level" : 4,
 
-  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animation" : "gprotectorate-bow.animation",
   "animationParts" : {
     "bow" : "protectorhuntingbow.png"
   },
@@ -32,18 +32,134 @@
 
   "scripts" : ["/items/active/weapons/bow/bow.lua"],
 
-  "primaryAbilityType" : "bowshot",
   "primaryAbility" : {
-    "drawFrameSelector" : "poisonBowImageSelector",
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
+    "class" : "GProtBowShot",
+	
+	"fireOffset" : [0.75, 0],
+
+    "drawTime" : 0.6,				//Time to fully draw the bow
+	"powerProjectileTime" : 0.2,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 30,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 5,			//Energy consumption per second while fully drawn
+	
+    "cooldownTime" : 0.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.02,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : false,		//If true, prevents the player from running while drawing the bow
+	
+	"drainEnergyWhilePowerful" : false,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
+
+    "drawArmFrames" : ["rotation", "rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "protectorhuntingarrow",
-    "powerProjectileType" : "chargedprotectorhuntingarrow",
     "projectileParameters" : {
-      "power" : 7.5
+      "speed" : 80,
+      "power" : 7.0
+    },
+    "powerProjectileType" : "chargedprotectorhuntingarrow",
+    "powerProjectileParameters" : {
+      "speed" : 100,
+      "power" : 9.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "swim.2"
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
     }
   },
 
-  "altAbilityType" : "splitshot",
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
+    "class" : "GProtBowShot",
+	
+	"fireOffset" : [0.75, 0],
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+    "drawTime" : 1.2,				//Time to fully draw the bow
+	"powerProjectileTime" : 0.2,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 30,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 5,			//Energy consumption per second while fully drawn
+	
+    "cooldownTime" : 1.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.125,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : false,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
+
+    "drawArmFrames" : ["rotation", "rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+	"projectileCount" : 5,	//Amount of arrows to shoot at once
+    "projectileType" : "protectorhuntingarrow",
+    "projectileParameters" : {
+      "speed" : 80,
+      "power" : 7.0
+    },
+    "powerProjectileType" : "chargedprotectorhuntingarrow",
+    "powerProjectileParameters" : {
+      "speed" : 100,
+      "power" : 9.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "swim.2"
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

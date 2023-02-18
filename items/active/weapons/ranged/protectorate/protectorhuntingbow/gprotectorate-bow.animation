@@ -1,0 +1,69 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "bow" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "loosed" : {}
+        }
+      }
+    },
+	
+    "parts" : {
+      "bow" : {
+        "properties" : {
+          "centered" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
+        }
+      },
+      "bowFullbright" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 1,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+
+  "sounds" : {
+    "draw" : [ ],
+    "ready" : [ ],
+    "release" : [ ],
+    "perfectRelease" : [ ]
+  }
+}

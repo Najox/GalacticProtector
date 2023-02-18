@@ -9,17 +9,19 @@
   "category" : "Pistol",
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged"],
-  "level" : 6,
+  "level" : 4,
 
   "inventoryIcon" : "protectorhandgunicon.png",
 
   "animation" : "protectorhandgun.animation",
   "animationParts" : {
     "gun" : "protectorhandgun.png",
-    "gunfullbright" : "protectorhandgunfullbright.png"
+    "gunfullbright" : "protectorhandgunfullbright.png",
+	
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {},
-  "muzzleOffset" : [2.5, 0.5],
+  "muzzleOffset" : [1.5, 0.25],
 
   "scripts" : ["/items/active/weapons/ranged/gun.lua"],
 
@@ -34,18 +36,18 @@
         "cooldown" : 0.1,
         "projectileType" : "protectorhandgun_smallshot",
         "projectileParameters" : {},
-        "inaccuracy" : 0.008,
+        "inaccuracy" : 0.0095,
         "baseDamage" : 1.5,
         "fireSound" : "fire"
       },
       {
-        "time" : 1.0,
+        "time" : 0.6,
         "energyCost" : 40,
-        "cooldown" : 0.125,
+        "cooldown" : 0.25,
         "projectileType" : "protectorhandgun_largeshot",
         "projectileParameters" : {},
-        "inaccuracy" : 0,
-        "baseDamage" : 9,
+        "inaccuracy" : 0.005,
+        "baseDamage" : 6,
         "fireSound" : "fire2"
       }
     ]

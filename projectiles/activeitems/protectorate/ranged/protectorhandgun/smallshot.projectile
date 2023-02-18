@@ -13,7 +13,7 @@
   ],
   "power" : 7,
   "knockback" : 5,
-  "speed" : 80,
+  "speed" : 95,
   "damageKind" : "plasma"
 
 }

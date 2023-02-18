@@ -4,7 +4,7 @@
   "inventoryIcon" : "protectorbattlebowicon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "tooltipKind" : "bow",
+  "tooltipKind" : "base",
   "category" : "bow",
   "description" : "A secret weapon made by the Galactic Protectorate for infiltration mission.",
   "shortdescription" : "Protector's Heavy Bow",
@@ -15,7 +15,7 @@
 
   "level" : 6,
 
-  "animation" : "/animations/protectorate/protectorbattlebow/protectorbattlebow.animation",
+  "animation" : "/items/active/weapons/ranged/protectorate/protectorhuntingbow/gprotectorate-bow.animation",
   "animationParts" : {
     "bow" : "protectorbattlebow.png",
     "bowFullbright" : "protectorbattlebowfullbright.png"
@@ -38,28 +38,137 @@
 
   "scripts" : ["/items/active/weapons/bow/bow.lua"],
 
-  "primaryAbilityType" : "bowshot",
   "primaryAbility" : {
-    "drawSpeedMultiplier" : "constant",
+    "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
+    "class" : "GProtBowShot",
+	
+	"fireOffset" : [0.75, 0],
+
+    "drawTime" : 1.0,				//Time to fully draw the bow
+	"powerProjectileTime" : 0.2,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 30,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 5,			//Energy consumption per second while fully drawn
+	
+	"speedNotAffectedByDraw" : false, //Projectile speed is unaffected by the draw
+	
+    "cooldownTime" : 0.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.02,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	
+	"drainEnergyWhilePowerful" : true,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
+
+    "drawArmFrames" : ["rotation", "rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "protectorbattlearrow",
+    "projectileParameters" : {
+      "speed" : 80,
+      "power" : 7.0
+    },
     "powerProjectileType" : "chargedprotectorbattlearrow",
-    "projectileParameters" : {
-      "power" : 7.5,
-      "speed" : 100
+    "powerProjectileParameters" : {
+      "speed" : 100,
+      "power" : 9.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "swim.2"
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
     }
   },
 
-  "altAbilityType" : "lightarrow",
   "altAbility" : {
-    "drawSpeedMultiplier" : "constant",
-    "drawFrameSelector" : "poisonBowImageSelectorNoPower",
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
+    "class" : "GProtBowShot",
+	
+	"fireOffset" : [0.75, 0],
+
+    "drawTime" : 1.5,				//Time to fully draw the bow
+	"powerProjectileTime" : 0.2,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 30,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 5,			//Energy consumption per second while fully drawn
+	
+	"speedNotAffectedByDraw" : false, //Projectile speed is unaffected by the draw
+	
+    "cooldownTime" : 1.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.02,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	
+	"drainEnergyWhilePowerful" : true,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
+
+    "drawArmFrames" : ["rotation", "rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "GProtector_lightarrow",
-    "powerProjectileType" : "GProtector_chargedlightarrow",
     "projectileParameters" : {
-      "power" : 8.125
+      "speed" : 80,
+      "power" : 7.0
+    },
+    "powerProjectileType" : "GProtector_chargedlightarrow",
+    "powerProjectileParameters" : {
+      "speed" : 100,
+      "power" : 9.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "swim.2"
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
     }
   },
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
