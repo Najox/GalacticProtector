@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "cobblestonematerial", "count" : 2 },
+    { "item" : "volatilepowder", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "GProtector_abrasivestone",
+    "count" : 2
+  },
+  "groups" : [ "craftingfurnace", "ingredients", "all" ]
+}

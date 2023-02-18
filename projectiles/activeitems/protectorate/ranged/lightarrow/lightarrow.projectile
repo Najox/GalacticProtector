@@ -1,0 +1,71 @@
+{
+  "projectileName" : "GProtector_lightarrow",
+  "physics" : "default",
+  "bounces" : 0,
+  "piercing" : true,
+  "periodicActions" : [
+    {
+      "action" : "particle",
+      "specification" : "protectorblade",
+      "time" : 0.05,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "protectorblade2",
+      "time" : 0.07,
+      "repeat" : true
+    },
+    {
+      "action" : "particle",
+      "specification" : "lightarrowtrail",
+      "rotate" : true,
+      "time" : 0.032,
+      "repeat" : true
+    },
+    {
+      "time" : 0.05,
+      "loop" : true,
+      "action" : "projectile",
+      "type" : "GProtector_lightorb",
+      "fuzzAngle" : 360
+    }
+
+  ],
+  "actionOnReap" : [
+    {
+        "action" : "config",
+      "file" : "/projectiles/explosions/chargedprotectorbattlearrow/chargedprotectorbattlearrowlargeexplosion.config"
+      
+    },
+    {
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "protectorblade",
+          "time" : 0.1,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "protectorblade2",
+          "time" : 0.1,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+  "image" : "lightarrow.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 2,
+  "lightColor" : [0, 90, 140],
+  "fullbright" : true, 
+  "timeToLive" : 10,
+  "damagePoly" : [ [-10, 0], [2, 4], [10, 0], [2, -4] ],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "damageKind" : "bow"
+}

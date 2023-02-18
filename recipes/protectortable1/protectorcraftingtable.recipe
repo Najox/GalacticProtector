@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "protectoratebroadsword", "count" : 1 },
+    { "item" : "electricmodule", "count" : 1 },
+    { "item" : "firemodule", "count" : 1 },
+    { "item" : "icemodule", "count" : 1 },
+    { "item" : "poisonmodule", "count" : 1 },
+    { "item" : "physicalmodule", "count" : 1 }
+  ],
+  "output" : { "item" : "GProtector_protectorcraftingtable", "count" : 1 },
+  "groups" : [ "inventorstable3", "craftingstations", "all" ]
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "icemodule",
+  "price" : 120,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "icemodule.png",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Ice Module",
+  "itemTags" : [ "reagent" ]
+}

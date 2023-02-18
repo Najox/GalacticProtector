@@ -1,0 +1,55 @@
+{
+  "itemName" : "GProtector_protectorhandgun",
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A small pistol made for the new recruits of the Galactic Protectorate",
+  "shortdescription" : "Protector's Handgun",
+  "tooltipKind" : "base",
+  "category" : "Pistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged"],
+  "level" : 6,
+
+  "inventoryIcon" : "protectorhandgunicon.png",
+
+  "animation" : "protectorhandgun.animation",
+  "animationParts" : {
+    "gun" : "protectorhandgun.png",
+    "gunfullbright" : "protectorhandgunfullbright.png"
+  },
+  "animationCustom" : {},
+  "muzzleOffset" : [2.5, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "chargefire",
+  "primaryAbility" : {
+    "chargeLevels" : [
+      {
+        "time" : 0,
+        "energyCost" : 5,
+        "cooldown" : 0.1,
+        "projectileType" : "protectorhandgun_smallshot",
+        "projectileParameters" : {},
+        "inaccuracy" : 0.008,
+        "baseDamage" : 1.5,
+        "fireSound" : "fire"
+      },
+      {
+        "time" : 1.0,
+        "energyCost" : 40,
+        "cooldown" : 0.125,
+        "projectileType" : "protectorhandgun_largeshot",
+        "projectileParameters" : {},
+        "inaccuracy" : 0,
+        "baseDamage" : 9,
+        "fireSound" : "fire2"
+      }
+    ]
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

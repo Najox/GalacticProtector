@@ -1,0 +1,113 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "charge" : {
+            "frames" : 3,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "chargedLoop",
+            "properties" : {
+              "persistentSound" : "/sfx/gun/dragonhead_charge2.ogg",
+              "persistentSoundStopTime" : 0.5
+            }
+          },
+          "chargedLoop" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "loop",
+            "transition" : "fire"
+          },
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.25, 0],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            },
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            },
+            "chargedLoop" : {
+              "properties" : {
+                "image" : "<partImage>:chargedLoop.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "gunfullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.25, 0],
+          "transformationGroups" : ["weapon"],
+          "zLevel" : 1,
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:empty"
+              }
+            },
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            },
+            "chargedLoop" : {
+              "properties" : {
+                "image" : "<partImage>:chargedLoop.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/gun/dragonhead_fire1.ogg" ],
+    "fire2" : [ "/sfx/gun/dragonhead_charged_fire1.ogg", "/sfx/gun/dragonhead_charged_fire1.ogg", "/sfx/gun/dragonhead_charged_fire1.ogg", "/sfx/gun/dragonhead_charged_fire2.ogg", "/sfx/gun/dragonhead_charged_fire3.ogg", "/sfx/gun/dragonhead_charged_fire4.ogg" ]
+  }
+}

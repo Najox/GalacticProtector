@@ -1,0 +1,52 @@
+{
+  "itemName" : "GProtector_lightspear",
+  "price" : 1100,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A deadly spear designed by the Galactic Protectorate, it can pierce throught everything.",
+  "shortdescription" : "Protector's Lightspear",
+  "tooltipKind" : "sword",
+  "category" : "Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "melee", "spear"],
+
+  "inventoryIcon" : "lightspearicon.png",
+
+  "animation" : "/animations/protectorate/protectorlightspear/energyspear.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png",  
+    "swordfullbright" : "protectoratespearfullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 6.0,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.95,
+    "baseDps" : 10.5,
+
+    "stances" : {
+      "windup1" : {
+        "duration" : 0.15
+      }
+    }
+  },
+
+  "altAbilityType" : "energyblast",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

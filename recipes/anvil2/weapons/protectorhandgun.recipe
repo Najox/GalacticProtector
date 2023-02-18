@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 3 },
+    { "item" : "smallbattery", "count" : 1 }
+  ],
+  "output" : { "item" : "GProtector_protectorhandgun", "count" : 1 },
+  "groups" : [ "craftinganvil2", "protectoratestation", "ranged", "weapons", "all" ]
+}

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "titaniumbar", "count" : 6 },
+    { "item" : "goldbar", "count" : 4 },
+    { "item" : "volatilepowder", "count" : 10 }
+  ],
+  "output" : { "item" : "GProtector_protectorspear", "count" : 1 },
+  "groups" : [ "craftinganvil2", "protectoratestation", "weapons", "melee", "all" ]
+}

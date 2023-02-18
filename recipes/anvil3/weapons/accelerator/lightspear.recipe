@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "GProtector_protectorspear", "count" : 1 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "solariumstar", "count" : 10 }
+  ],
+  "output" : { "item" : "GProtector_lightspear", "count" : 1 },
+  "groups" : [ "craftingaccelerator", "protectoratestation", "weapons", "melee", "all" ]
+}

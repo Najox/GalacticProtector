@@ -1,0 +1,10 @@
+{
+  "itemName" : "GProtector_blueprintest",
+  "price" : 1,
+  "rarity" : "Common",
+  "category" : "Blueprint",
+  "inventoryIcon" : "blueprintinhand.png",
+  "description" : "test of a blueprint",
+  "shortdescription" : "Blueprintest",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,87 @@
+{
+  "itemName" : "protectoratekatanaice",
+  "price" : 1250,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful experimental weapon designed by the Protectorates.",
+  "shortdescription" : "^blue;Frozen Protector's Katana^white;",
+  "tooltipKind" : "sword",
+  "category" : "Katana",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "protana3.png:inactive",
+
+  "animation" : "/items/active/weapons/protectorate/protectoratebroadsword/protectoratebroadsword.animation",
+  "animationParts" : {
+    "sword" : "protana3.png",
+    "swordfullbright" : "protana3.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/protectorate/protectoratebroadsword/protectoratebroadsword.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.3,
+    "baseDps" : 30,
+
+    "animKeyPrefix" : "inactive"
+  },
+
+  "inactiveBaseDps" : 30,
+  "activeBaseDps" : 35,
+
+  "altAbility" : {
+    "name" : "Empowerment 2.5",
+    "type" : "empowerment",
+    "scripts" : ["/items/active/weapons/protectorate/protectoratebroadsword/empowerment.lua"],
+    "class" : "Empowerment",
+
+    "energyPerSecond" : 30,
+
+    "projectileOffset" : [1, 0],
+    "projectileType" : "icetravelingswoosh2",
+    "baseDamage" : 35,
+
+    "cooldownTime" : 1.0,
+
+    "stances" : {
+      "empower" : {
+        "durationBefore" : 0.2,
+        "durationAfter" : 0.5,
+        "armRotation" : 90,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "weaponOffset" : [0.5, -0.375],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup" : {
+        "duration" : 0.25,
+        "armRotation" : 70,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

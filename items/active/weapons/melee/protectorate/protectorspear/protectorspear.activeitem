@@ -1,0 +1,42 @@
+{
+  "itemName" : "GProtector_protectorspear",
+  "price" : 960,
+  "level" : 3,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A spear designed by Najox for the Galactic Protectorate, primary used for defense.",
+  "shortdescription" : "Protector's Spear",
+  "tooltipKind" : "sword",
+  "category" : "Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "inventoryIcon" : "protectorspearicon.png",
+
+  "animation" : "/animations/protectorate/protectorspear/protectorspear.animation",
+  "animationParts" : {
+    "handle" : "spearhandle.png",
+    "blade" : "spearblade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.95,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "superflurry",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,65 @@
+{
+  "itemName" : "GProtector_protectorbattlebow",
+  "price" : 960,
+  "inventoryIcon" : "protectorbattlebowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "A secret weapon made by the Galactic Protectorate for infiltration mission.",
+  "shortdescription" : "Protector's Heavy Bow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 6,
+
+  "animation" : "/animations/protectorate/protectorbattlebow/protectorbattlebow.animation",
+  "animationParts" : {
+    "bow" : "protectorbattlebow.png",
+    "bowFullbright" : "protectorbattlebowfullbright.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bow" : { "properties" : {
+        "offset" : [0.8, 0]
+      }},
+      "bowFullbright" : { "properties" : {
+        "offset" : [0.8, 0]
+      }}
+    }},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/melee/laser_weapon_swing2.ogg" ],
+      "perfectRelease" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "protectorbattlearrow",
+    "powerProjectileType" : "chargedprotectorbattlearrow",
+    "projectileParameters" : {
+      "power" : 7.5,
+      "speed" : 100
+    }
+  },
+
+  "altAbilityType" : "lightarrow",
+  "altAbility" : {
+    "drawSpeedMultiplier" : "constant",
+    "drawFrameSelector" : "poisonBowImageSelectorNoPower",
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "projectileType" : "GProtector_lightarrow",
+    "powerProjectileType" : "GProtector_chargedlightarrow",
+    "projectileParameters" : {
+      "power" : 8.125
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

@@ -1,0 +1,16 @@
+{
+  "frameGrid" : {
+    "size" : [20, 15],
+    "dimensions" : [6, 2],
+    "names" : [
+      [ "charge.1", "charge.2", "charge.3", "chargedLoop.1", "chargedLoop.2", "chargedLoop.3" ],
+      [ "fire.1", "fire.2" ]
+    ]
+  },
+  "aliases" : {
+    
+  }
+}
+
+
+

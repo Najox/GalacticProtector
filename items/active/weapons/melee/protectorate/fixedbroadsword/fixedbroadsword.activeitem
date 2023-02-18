@@ -1,0 +1,39 @@
+{
+  "itemName" : "GProtector_fixedbroadsword",
+  "price" : 980,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A weapon designed by the Terrene Protectorate, Najox tried to salvage it but it's far from perfect.",
+  "shortdescription" : "Fixed Broadsword",
+  "tooltipKind" : "sword",
+  "category" : "Broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : [
+    {"image" : "fixedbroadswordblade.png"},
+    {"image" : "fixedbroadswordhandle.png"}
+  ],
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "fixedbroadswordblade.png",
+    "blade" : "fixedbroadswordhandle.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 12
+  },
+
+  "altAbilityType" : "spinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

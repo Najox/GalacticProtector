@@ -1,0 +1,98 @@
+{
+  "itemName" : "GProtector_lightsword",
+  "price" : 1100,
+  "level" : 8,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A new broadsword created by the Galactic Protectorate, far superior to it's previous counterpart",
+  "shortdescription" : "Protector's Lightsword",
+  "tooltipKind" : "sword",
+  "category" : "Broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee", "broadsword"],
+
+  "inventoryIcon" : "lightswordicon.png",
+
+  "animation" : "/animations/protectorate/protectorlightsword/lightsword.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png",
+    "swordfullbright" : "bladefullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 17,
+
+    "stances" : {
+      "windup1" : {
+        "duration" : 0.15
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Lighting Strike",
+    "type" : "energystrike",
+    "scripts" : ["/items/active/weapons/melee/protectorate/protectorlightsword/lightingstrike.lua"],
+    "class" : "LightingStrike",
+
+    "energyUsage": 60,
+
+    "projectileOffset" : [1, 0],
+    "projectileType" : "energytravelingswoosh",
+    "baseDamage" : 12,
+
+    "cooldownTime" : 1.0,
+
+    "stances" : {
+      "empower" : {
+        "durationBefore" : 0.2,
+        "durationAfter" : 0.5,
+        "armRotation" : 90,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "weaponOffset" : [0.5, -0.375],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup" : {
+        "duration" : 0.25,
+        "armRotation" : 70,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

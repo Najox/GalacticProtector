@@ -1,0 +1,19 @@
+{
+  "projectileName" : "energyshot",
+  "image" : "energyshot.png",
+  "animationCycle" : 0.3,
+  "lightColor" : [79, 175, 178],
+  "frameNumber" : 2,
+  "damageKindImage" : "icon.png",
+  "physics" : "boomerang",
+  "speed" : 100,
+  "emitters" : [ "energyshot" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+    }
+  ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "slash"
+}

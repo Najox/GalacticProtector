@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "GProtector_fixedbroadsword", "count" : 1 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "solariumstar", "count" : 5 }
+  ],
+  "output" : { "item" : "GProtector_protectorenergypickaxe", "count" : 1 },
+  "groups" : [ "craftingfarm2", "protectoratestation", "survival", "tools" ]
+
+}

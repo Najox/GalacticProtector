@@ -1,0 +1,65 @@
+{
+  "itemName" : "GProtector_protectorenergypickaxe",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Tool",
+  "description" : "A pickaxe designed by the Galactic Protectorate for exploration missions.",
+  "shortdescription" : "Protector's Energy Pickaxe",
+  "tooltipKind" : "base",
+  "twoHanded" : true,
+  "itemTags" : ["miningtool", "pickaxe", "tools"],
+
+  "inventoryIcon" : "protectorenergypickaxeicon.png",
+
+  "animation" : "/items/active/tools/protectorenergypickaxe/protectorenergypickaxe.animation",
+  "animationParts" : {
+    "handle" : "protectorenergypickaxehandle.png",
+    "blade" : "protectorenergypickaxehead.png"
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "pickslash",
+  "primaryAbility" : {
+    "layer" : "foreground",
+
+    "activatingFireMode" : "primary",
+    "energyUsage" : 5,
+
+    "requisiteAnimationStates" : {
+      "blade" : "active"
+    },
+    "windupAnimationStates" : {
+      "blade" : "activating"
+    },
+    "onLeaveAnimationStates" : {
+      "blade" : "deactivating"
+    }
+  },
+
+  "altAbilityType" : "pickslash",
+  "altAbility" : {
+    "layer" : "background",
+
+    "activatingFireMode" : "alt",
+    "energyUsage" : 5,
+
+    "requisiteAnimationStates" : {
+      "blade" : "active"
+    },
+    "windupAnimationStates" : {
+      "blade" : "activating"
+    },
+    "onLeaveAnimationStates" : {
+      "blade" : "deactivating"
+    },
+    "inactiveAnimationStates" : {
+      "blade" : "inactive"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

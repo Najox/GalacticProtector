@@ -1,0 +1,62 @@
+{
+  "projectileName" : "GProtector_lightorb",
+  "physics" : "sticky",
+  "timeToLive" : 1,
+  "image" : "lightorb.png",
+  "animationCycle" : 0.3,
+  "lightColor" : [0, 90, 140],
+  "frameNumber" : 4,
+  "periodicActions" : [
+    {
+      "time" : 0.2,
+      "action" : "loop",
+      "count" : 5,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "protectorblade",
+          "time" : 0.05,
+          "repeat" : true
+        },
+        {
+          "action" : "particle",
+          "specification" : "protectorblade2",
+          "time" : 0.05,
+          "repeat" : true
+        }
+      ]
+    }
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/protectorbattlearrow/protectorbattlearrowexplosion.config"
+      
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/gun/lightningcoil1.ogg", "/sfx/gun/lightningcoil2.ogg", "/sfx/gun/lightningcoil3.ogg" ]
+    }
+  ],
+  "speed" : 25,
+  "power" : 10,
+  "damageKind" : "electric",
+  "damagePoly" : [ [-10, 0], [-7, -7], [0, -10], [7, -7], [10, 0], [7, 7], [0, 10], [-7, 7] ],
+  "statusEffects" : [ "electrified" ],
+  "damageRepeatTimeout" : 0.25,
+
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [ "electricplasma" ],
+
+  "piercing" : true,
+  "bounces" : -1,
+
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+
+  "controlMovement" : {
+    "maxSpeed" : 40,
+    "controlForce" : 80
+  },
+  "persistentAudio" : "/sfx/melee/barrier_create_electric.ogg"
+}

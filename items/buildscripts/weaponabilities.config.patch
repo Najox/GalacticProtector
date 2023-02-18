@@ -1,0 +1,22 @@
+[
+	{
+		"op" : "add",
+		"path" : "/superflurry",
+		"value" : "/items/active/weapons/melee/abilities/spear/superflurry/superflurry.weaponability"
+	},
+	{
+		"op" : "add",
+		"path" : "/energyblast",
+		"value" : "/items/active/weapons/melee/abilities/spear/energyblast/energyblast.weaponability"
+	},
+	{
+		"op" : "add",
+		"path" : "/splitshot",
+		"value" : "/items/active/weapons/ranged/abilities/splitshot/splitshot.weaponability"
+	},
+	{
+		"op" : "add",
+		"path" : "/lightarrow",
+		"value" : "/items/active/weapons/ranged/abilities/lightarrow/lightarrow.weaponability"
+	}
+]

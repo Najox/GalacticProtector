@@ -1,0 +1,10 @@
+{
+  "itemName" : "electricmodule",
+  "price" : 120,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "electricmodule.png",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Electric Module",
+  "itemTags" : [ "reagent" ]
+}

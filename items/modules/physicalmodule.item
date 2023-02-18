@@ -1,0 +1,10 @@
+{
+  "itemName" : "physicalmodule",
+  "price" : 120,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "physicalmodule.png",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Physical Module",
+  "itemTags" : [ "reagent" ]
+}

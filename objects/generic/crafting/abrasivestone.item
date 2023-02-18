@@ -1,0 +1,10 @@
+{
+  "itemName" : "GProtector_abrasivestone",
+  "price" : 1,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "abrasivestone.png",
+  "description" : "Abrasive stone can be used to clean and sharpen weapons",
+  "shortdescription" : "Abrasive Stone",
+  "itemTags" : [ "reagent" ]
+}

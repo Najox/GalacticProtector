@@ -1,0 +1,24 @@
+[
+  //Swords
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "brokenprotectoratebroadsword"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_fixedbroadsword"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorgreatsword"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_lightsword"}},
+
+  //Spears
+
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorspear"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_lightspear"}},
+
+  //Guns
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorhandgun"}},
+
+  //Bows
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorhuntingbow"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorbattlebow"}},
+
+  //Tools
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorenergypickaxe"}}
+
+
+]
