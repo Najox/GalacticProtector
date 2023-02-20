@@ -4,6 +4,6 @@
     { "item" : "copperbar", "count" : 5 },
     { "item" : "volatilepowder", "count" : 10 }
   ],
-  "output" : { "item" : "GProtector_fixedbroadsword", "count" : 1 },
+  "output" : { "item" : "gprotector_fixedbroadsword", "count" : 1 },
   "groups" : [ "craftinganvil2", "protectoratestation", "weapons", "melee", "all" ]
 }

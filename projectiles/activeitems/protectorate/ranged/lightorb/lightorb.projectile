@@ -1,5 +1,5 @@
 {
-  "projectileName" : "GProtector_lightorb",
+  "projectileName" : "gprotector_lightorb",
   "physics" : "sticky",
   "timeToLive" : 1,
   "image" : "lightorb.png",

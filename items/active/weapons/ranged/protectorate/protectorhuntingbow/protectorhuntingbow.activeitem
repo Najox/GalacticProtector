@@ -1,5 +1,5 @@
 {
-  "itemName" : "GProtector_protectorhuntingbow",
+  "itemName" : "gprotector_protectorhuntingbow",
   "price" : 640,
   "inventoryIcon" : "protectorhuntingbowicon.png",
   "maxStack" : 1,
@@ -34,7 +34,7 @@
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
-    "class" : "GProtBowShot",
+    "class" : "gprotBowShot",
 	
 	"fireOffset" : [0.75, 0],
 
@@ -98,7 +98,7 @@
 
   "altAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
-    "class" : "GProtBowShot",
+    "class" : "gprotBowShot",
 	
 	"fireOffset" : [0.75, 0],
 

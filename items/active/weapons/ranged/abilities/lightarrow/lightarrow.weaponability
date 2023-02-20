@@ -21,8 +21,8 @@
 
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
-    "projectileType" : "GProtector_lightarrow",
-    "powerProjectileType" : "GProtector_chargedlightarrow",
+    "projectileType" : "gprotector_lightarrow",
+    "powerProjectileType" : "gprotector_chargedlightarrow",
     "powerProjectileTime" : [0.9, 1.1],
     "projectileParameters" : {
       "speed" : 100,

@@ -1,5 +1,5 @@
 {
-  "projectileName" : "GProtector_chargedlightarrow",
+  "projectileName" : "gprotector_chargedlightarrow",
   "physics" : "default",
   "bounces" : 0,
   "piercing" : true,
@@ -27,7 +27,7 @@
       "time" : 0.05,
       "loop" : true,
       "action" : "projectile",
-      "type" : "GProtector_lightorb",
+      "type" : "gprotector_lightorb",
       "fuzzAngle" : 360
     }
 

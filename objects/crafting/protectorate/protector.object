@@ -1,5 +1,5 @@
 {
-  "objectName" : "GProtector_protectorcraftingtable",
+  "objectName" : "gprotector_protectorcraftingtable",
   "colonyTags" : [],
   "rarity" : "Legendary",
   "interactAction" : "OpenCraftingInterface",

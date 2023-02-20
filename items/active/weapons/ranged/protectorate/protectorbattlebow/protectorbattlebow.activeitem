@@ -1,5 +1,5 @@
 {
-  "itemName" : "GProtector_protectorbattlebow",
+  "itemName" : "gprotector_protectorbattlebow",
   "price" : 960,
   "inventoryIcon" : "protectorbattlebowicon.png",
   "maxStack" : 1,
@@ -129,12 +129,12 @@
     "drawArmFrames" : ["rotation", "rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
 	"projectileCount" : 1,	//Amount of arrows to shoot at once
-    "projectileType" : "GProtector_lightarrow",
+    "projectileType" : "gprotector_lightarrow",
     "projectileParameters" : {
       "speed" : 80,
       "power" : 7.0
     },
-    "powerProjectileType" : "GProtector_chargedlightarrow",
+    "powerProjectileType" : "gprotector_chargedlightarrow",
     "powerProjectileParameters" : {
       "speed" : 100,
       "power" : 9.0

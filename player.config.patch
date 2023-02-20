@@ -1,24 +1,24 @@
 [
   //Swords
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "brokenprotectoratebroadsword"}},
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_fixedbroadsword"}},
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorgreatsword"}},
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_lightsword"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_fixedbroadsword"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorgreatsword"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_lightsword"}},
 
   //Spears
 
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorspear"}},
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_lightspear"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorspear"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_lightspear"}},
 
   //Guns
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorhandgun"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorhandgun"}},
 
   //Bows
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorhuntingbow"}},
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorbattlebow"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorhuntingbow"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorbattlebow"}},
 
   //Tools
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "GProtector_protectorenergypickaxe"}}
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorenergypickaxe"}}
 
 
 ]
