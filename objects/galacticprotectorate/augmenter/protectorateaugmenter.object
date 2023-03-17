@@ -56,8 +56,6 @@
   "interactData" : "/interface/scripted/gprotectorate_augmenter/gprotectorate_augmenter.config",
   "scriptDelta" : 1,
   
-  "crafted" : false,
-  
   "useFloatingObject" : true,			//If true, the item will smoothly float up and down
   "floatingObjectCycle" : 10.0,			//Time for the item to move a full cycle
   "floatingObjectMaxTransform" : 0.35	//Maximum up and down movement from origin
