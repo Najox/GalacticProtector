@@ -1,0 +1,12 @@
+{
+  "itemName" : "gprotectorate_poisonprotectoratemodule",
+  "price" : 120,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "protectoratemodules.png:poison",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Toxin Module",
+  "itemTags" : [ "reagent", "gprotectorate_module" ],
+  
+  "elementalType" : "poison"
+}

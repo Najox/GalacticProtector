@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "protectoratebroadsword", "count" : 1 },
-    { "item" : "diamond", "count" : 1 },
-    { "item" : "solariumstar", "count" : 10 }
-  ],
-  "output" : { "item" : "gprotector_protectorgreatsword", "count" : 1 },
-  "groups" : [ "craftinganvil3", "protectoratestation", "weapons", "melee", "all" ]
-}

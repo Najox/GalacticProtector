@@ -7,7 +7,7 @@
   "tooltipKind" : "base",
   "category" : "bow",
   "description" : "A secret weapon made by the Galactic Protectorate for infiltration mission.",
-  "shortdescription" : "Protector's Heavy Bow",
+  "shortdescription" : "Protector's Plasma Bow",
   "twoHanded" : true,
   "itemTags" : ["weapon", "ranged", "bow"],
 
@@ -131,12 +131,12 @@
 	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "gprotector_lightarrow",
     "projectileParameters" : {
-      "speed" : 80,
+      "speed" : 90,
       "power" : 7.0
     },
     "powerProjectileType" : "gprotector_chargedlightarrow",
     "powerProjectileParameters" : {
-      "speed" : 100,
+      "speed" : 90,
       "power" : 9.0
     },
 

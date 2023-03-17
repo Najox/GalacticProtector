@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "craftinganvil", "count" : 1 }
+  ],
+  "output" : { "item" : "gprotector_protectoratefabricator", "count" : 1 },
+  "groups" : [ "inventorstable2", "craftingstations", "all" ]
+}

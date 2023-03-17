@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [35, 26],
+    "dimensions" : [2, 1],
+    "names" : [
+      [ "default.player", "default.world" ]
+    ]
+  },
+  
+  "aliases" : {
+    "default.default" : "default.player"
+  }
+}

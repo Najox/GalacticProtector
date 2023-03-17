@@ -1,0 +1,12 @@
+{
+  "itemName" : "gprotectorate_fireprotectoratemodule",
+  "price" : 120,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "protectoratemodules.png:fire",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Flame Module",
+  "itemTags" : [ "reagent", "gprotectorate_module" ],
+  
+  "elementalType" : "fire"
+}

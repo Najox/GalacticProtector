@@ -1,9 +1,0 @@
-{
-  "input" : [
-    { "item" : "diamond", "count" : 1 },
-    { "item" : "solariumstar", "count" : 10 },
-    { "item" : "battery", "count" : 1 }
-  ],
-  "output" : { "item" : "gprotector_protectorbattlebow", "count" : 1 },
-  "groups" : [ "craftingaccelerator", "protectoratestation", "weapons", "ranged", "all" ]
-}

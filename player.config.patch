@@ -1,24 +1,26 @@
 [
-  //Swords
+  //Melee
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectoratefabricator"}},
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorateaugmenter"}},
+  
+  //Melee
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "brokenprotectoratebroadsword"}},
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_fixedbroadsword"}},
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorgreatsword"}},
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_lightsword"}},
-
-  //Spears
-
-  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorspear"}},
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_lightspear"}},
 
-  //Guns
+  //Ranged
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorhandgun"}},
-
-  //Bows
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorhuntingbow"}},
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorbattlebow"}},
 
-  //Tools
+  //Utility
+  {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorshield"}},
+  
+  //Utility
   {"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorenergypickaxe"}}
-
-
+  
+  //Unused
+  //{"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_fixedbroadsword"}},
+  //{"op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "gprotector_protectorspear"}},
 ]

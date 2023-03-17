@@ -1,0 +1,19 @@
+{
+  "itemName" : "gprotectorate_physicalprotectoratemodule",
+  "price" : 50,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "protectoratemodules.png:physical",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Base Module",
+  "itemTags" : [ "reagent", "gprotectorate_module" ],
+  
+  "elementalType" : "physical",
+  
+  "learnBlueprintsOnPickup" : [
+    "gprotectorate_fireprotectoratemodule",
+    "gprotectorate_poisonprotectoratemodule",
+    "gprotectorate_iceprotectoratemodule",
+    "gprotectorate_electricprotectoratemodule"
+  ]
+}

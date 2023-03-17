@@ -1,0 +1,64 @@
+{
+  "objectName" : "gprotector_protectorateaugmenter",
+  "colonyTags" : [],
+  "rarity" : "Legendary",
+  "printable" : false,
+  "description" : "Used to craft augment Protectorate weapons elements.",
+  "shortdescription" : "^yellow;Protectorate Augmenter^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 160,
+
+  "health" : 5,
+
+  "apexDescription" : "A strange Protectorate device, it appears to alter the elemental functions of their weaponry.",
+  "avianDescription" : "An artefact of ancient times, no doubt.",
+  "floranDescription" : "Floran wondersss what cube isss...",
+  "glitchDescription" : "Intrigued. This appears to be a truly ancient artefact.",
+  "humanDescription" : "A spinning, levitating cube above some sort of pedestal. Is it valuable?",
+  "hylotlDescription" : "A mysterious cube. It feels like it's been here for eons.",
+  "novakidDescription" : "A weird cube floatin' 'bove some sorta pedestal.",
+
+  "inventoryIcon" : "protectorateaugmentericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "console.png:<color>" }, { "image" : "consolefullbright.png:<color>", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "console.png:<color>" }, { "image" : "consolefullbright.png:<color>", "fullbright" : true } ],
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "protectorateaugmenter.animation",
+  "animationParts" : {
+    "console" : "console.png",
+    "consolefullbright" : "consolefullbright.png",
+    "arms" : "arms.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [
+    "protectorateaugmenter.lua"
+  ],
+  "interactData" : "/interface/scripted/gprotectorate_augmenter/gprotectorate_augmenter.config",
+  "scriptDelta" : 1,
+  
+  "crafted" : false,
+  
+  "useFloatingObject" : true,			//If true, the item will smoothly float up and down
+  "floatingObjectCycle" : 10.0,			//Time for the item to move a full cycle
+  "floatingObjectMaxTransform" : 0.35	//Maximum up and down movement from origin
+}

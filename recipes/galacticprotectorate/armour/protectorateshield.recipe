@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "riotshield", "count" : 1 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "durasteelbar", "count" : 10 },
+    { "item" : "titaniumbar", "count" : 5 }
+  ],
+  "output" : { "item" : "gprotectorate_protectorateshield", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "armors", "all" ]
+
+}

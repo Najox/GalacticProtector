@@ -8,7 +8,7 @@
   "tooltipKind" : "base",
   "category" : "Pistol",
   "twoHanded" : false,
-  "itemTags" : ["weapon","ranged"],
+  "itemTags" : ["weapon", "ranged", "gprotector_moduleweapon"],
   "level" : 4,
 
   "inventoryIcon" : "protectorhandgunicon.png",
@@ -23,7 +23,7 @@
   "animationCustom" : {},
   "muzzleOffset" : [1.5, 0.25],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/gun.lua", "/items/active/weapons/gprotector_elementalcolouring.lua"],
 
   "elementalType" : "physical",
 
@@ -34,7 +34,7 @@
         "time" : 0,
         "energyCost" : 5,
         "cooldown" : 0.1,
-        "projectileType" : "protectorhandgun_smallshot",
+        "projectileType" : "protectorhandgun_<elementalType>smallshot",
         "projectileParameters" : {},
         "inaccuracy" : 0.0095,
         "baseDamage" : 1.5,
@@ -44,7 +44,7 @@
         "time" : 0.6,
         "energyCost" : 40,
         "cooldown" : 0.25,
-        "projectileType" : "protectorhandgun_largeshot",
+        "projectileType" : "protectorhandgun_<elementalType>largeshot",
         "projectileParameters" : {},
         "inaccuracy" : 0.005,
         "baseDamage" : 6,

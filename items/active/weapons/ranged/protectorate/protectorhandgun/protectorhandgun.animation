@@ -43,22 +43,22 @@
           "firing" : {
             "off" : {
               "properties" : {
-                "image" : "<partImage>:charge.<frame>"
+                "image" : "<partImage>:charge.<frame><elementalDirectives>"
               }
             },
             "charge" : {
               "properties" : {
-                "image" : "<partImage>:charge.<frame>"
+                "image" : "<partImage>:charge.<frame><elementalDirectives>"
               }
             },
             "chargedLoop" : {
               "properties" : {
-                "image" : "<partImage>:chargedLoop.<frame>"
+                "image" : "<partImage>:chargedLoop.<frame><elementalDirectives>"
               }
             },
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:fire.<frame>"
+                "image" : "<partImage>:fire.<frame><elementalDirectives>"
               }
             }
           }
@@ -77,22 +77,22 @@
           "firing" : {
             "off" : {
               "properties" : {
-                "image" : "<partImage>:empty"
+                "image" : "<partImage>:empty<elementalDirectives>"
               }
             },
             "charge" : {
               "properties" : {
-                "image" : "<partImage>:charge.<frame>"
+                "image" : "<partImage>:charge.<frame><elementalDirectives>"
               }
             },
             "chargedLoop" : {
               "properties" : {
-                "image" : "<partImage>:chargedLoop.<frame>"
+                "image" : "<partImage>:chargedLoop.<frame><elementalDirectives>"
               }
             },
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:fire"
+                "image" : "<partImage>:fire<elementalDirectives>"
               }
             }
           }
@@ -111,7 +111,7 @@
           "firing" : {
             "fire" : {
               "properties" : {
-                "image" : "<partImage>:1.<frame>"
+                "image" : "<partImage>:1.<frame><elementalDirectives>"
               }
             }
           }

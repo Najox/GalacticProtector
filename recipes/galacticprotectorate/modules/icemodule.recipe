@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "gprotectorate_physicalprotectoratemodule", "count" : 1 },
+    { "item" : "cryonicextract", "count" : 15 },
+    { "item" : "corefragmentore", "count" : 10 }
+  ],
+  "output" : { "item" : "gprotectorate_iceprotectoratemodule", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "survival", "tools" ]
+}

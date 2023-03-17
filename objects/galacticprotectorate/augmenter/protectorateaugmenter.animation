@@ -1,0 +1,62 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "filled",
+        "states" : {
+          "filled" : {
+            "frames" : 16,
+            "cycle" : 1.2,
+            "mode" : "loop",
+			"properties" : {
+              "lightsOn" : [ "glow" ]
+            }
+          },
+          "empty" : {
+            "frames" : 1,
+			"properties" : {
+              "lightsOff" : [ "glow" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "console" : {
+        "properties" : {
+          "zLevel" : 0,
+          "image" : "<partImage>:<color>",
+          "centered" : false
+        }
+      },
+      "consolefullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "image" : "<partImage>:<color>",
+		  "fullbright" : true,
+          "centered" : false
+        }
+      },
+      "arms" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "offset" : [-1, 2.5],
+          "centered" : false,
+          "image" : "<partImage>:<color>.<crafted>",
+          "transformationGroups" : [ "floatingObject" ]
+        }
+      }
+    }
+  },
+  
+  "transformationGroups" : {
+    "floatingObject" : {}
+  },
+  "lights" : {
+    "glow" : {
+      "position" : [1.5, 1.125],
+      "color" : [25, 0, 75]
+    }
+  }
+}

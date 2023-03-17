@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "brokenprotectoratebroadsword", "count" : 1 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "refinedviolium", "count" : 12 },
+    { "item" : "solariumstar", "count" : 7 }
+  ],
+  "output" : { "item" : "gprotector_lightsword", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "weapons", "melee", "all" ]
+}

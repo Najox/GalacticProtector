@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "gprotectorate_physicalprotectoratemodule", "count" : 1 },
+    { "item" : "staticcell", "count" : 15 },
+    { "item" : "corefragmentore", "count" : 10 }
+  ],
+  "output" : { "item" : "gprotectorate_electricprotectoratemodule", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "survival", "tools" ]
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "compoundbow", "count" : 1 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "refinedaegisalt", "count" : 15 },
+    { "item" : "solariumstar", "count" : 10 },
+    { "item" : "wire", "count" : 10 }
+  ],
+  "output" : { "item" : "gprotector_protectorbattlebow", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "weapons", "ranged", "all" ]
+}

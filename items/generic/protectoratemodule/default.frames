@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [16, 16],
+    "dimensions" : [5, 1],
+
+    "names" : [
+      [ "physical", "fire", "poison", "ice", "electric" ]
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelbroadsword", "count" : 1 },
+    { "item" : "durasteelbar", "count" : 5 },
+    { "item" : "goldbar", "count" : 1 }
+  ],
+  "output" : { "item" : "brokenprotectoratebroadsword", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "weapons", "melee", "all" ]
+}

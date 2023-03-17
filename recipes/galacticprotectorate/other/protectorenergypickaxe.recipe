@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "energypickaxe", "count" : 1 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "refinedaegisalt", "count" : 10 },
+    { "item" : "refnedviolium", "count" : 10 },
+    { "item" : "refinedferozium", "count" : 10 },
+    { "item" : "solariumstar", "count" : 5 }
+  ],
+  "output" : { "item" : "gprotector_protectorenergypickaxe", "count" : 1 },
+  "groups" : [ "gprotector_protectoratefabricator", "survival", "tools" ]
+}

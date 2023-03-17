@@ -1,0 +1,72 @@
+{
+  "objectName" : "gprotector_protectoratefabricator",
+  "colonyTags" : [],
+  "rarity" : "Uncommon",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting2.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Protectorate Fabricator",
+        "subtitle" : "Long may we stand",
+        "icon" : {
+          "file" : "/interface/crafting/protector_crafting_table/protectoricon.png"
+        }
+      }
+    },
+    "filter" : [ "gprotector_protectoratefabricator" ]
+  },
+  "printable" : false,
+  "description" : "Used to craft fabricate weapons.",
+  "shortdescription" : "^yellow;Protectorate Fabricator^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 160,
+
+  "lightColor" : [77, 110, 128],
+  "lightPosition" : [0, 1],
+
+  "flickerPeriod" : 0.8,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1.00,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.0,
+
+  "apexDescription" : "The Protectorate were once peaceful... They have changed.",
+  "avianDescription" : "Protectorate gear! How exciting!",
+  "floranDescription" : "Ssometimes plasma beatss sstick... I hate to admit it!",
+  "glitchDescription" : "Thrilled. New avenues to new weapons!",
+  "humanDescription" : "The Protectorate really developed since Earth's destruction... No wonder.",
+  "hylotlDescription" : "To enter a trance, plasma and soul.",
+  "novakidDescription" : "More weapons to my boundless arsenal.",
+
+  "inventoryIcon" : "protectoratefabricatoricon.png",
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "protectoratefabricator.png:<color>.<frame>" }, { "image" : "protectoratefabricatorfullbright.png:<color>.<frame>", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "frames" : 15,
+      "animationCycle" : 1.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "protectoratefabricator.png:<color>.<frame>" }, { "image" : "protectoratefabricatorfullbright.png:<color>.<frame>", "fullbright" : true } ],
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+
+      "frames" : 15,
+      "animationCycle" : 1.1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

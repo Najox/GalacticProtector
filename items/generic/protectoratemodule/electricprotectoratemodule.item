@@ -1,0 +1,12 @@
+{
+  "itemName" : "gprotectorate_electricprotectoratemodule",
+  "price" : 120,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "protectoratemodules.png:electric",
+  "description" : "A module to change the element of a protectorate weapon",
+  "shortdescription" : "Shock Module",
+  "itemTags" : [ "reagent", "gprotectorate_module" ],
+  
+  "elementalType" : "electric"
+}
