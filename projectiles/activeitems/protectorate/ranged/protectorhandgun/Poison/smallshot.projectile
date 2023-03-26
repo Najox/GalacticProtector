@@ -1,10 +1,10 @@
 {
-  "projectileName" : "protectorhandgun_smallshot",
+  "projectileName" : "protectorhandgun_poisonsmallshot",
   "physics" : "default",
   "image" : "smallshot.png",
   "animationCycle" : 0.5,
   "frameNumber" : 4,
-  "lightColor" : [79, 175, 178],
+  "lightColor" : [7, 186, 0],
   "actionOnReap" : [
     {
       "action" : "config",
@@ -14,6 +14,7 @@
   "power" : 7,
   "knockback" : 5,
   "speed" : 95,
-  "damageKind" : "plasma"
+  "damageKind" : "poison",
+  "statusEffects" : ["weakpoison"]
 
 }

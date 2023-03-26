@@ -1,0 +1,41 @@
+{
+  "projectileName" : "protectorhandgun_poisonlargeshot",
+  "physics" : "default",
+  "bounces" : 0,
+  "piercing" : true,
+  "image" : "largeshot.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 42,
+  "speed" : 300,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/activeitems/protectorate/ranged/protectorhandgun/Poison/trail.png",
+        "position" : [-2.5, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.35,
+        "destructionTime" : 0.125,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [7, 186, 0],
+  "fullbright" : true,
+  "damageKind" : "poison",
+  "statusEffects" : ["weakpoison"],
+  "persistentAudio" : "/sfx/gun/mech_teslastream_fire1.ogg"
+}
