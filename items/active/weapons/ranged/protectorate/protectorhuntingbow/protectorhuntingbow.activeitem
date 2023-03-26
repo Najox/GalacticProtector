@@ -15,9 +15,10 @@
 
   "level" : 4,
 
-  "animation" : "gprotectorate-bow.animation",
+  "animation" : "/items/active/weapons/ranged/protectorate/protectorhuntingbow/gprotectorate-bow.animation",
   "animationParts" : {
-    "bow" : "protectorhuntingbow.png"
+    "bow" : "protectorhuntingbow.png",
+    "bowFullbright" : ""
   },
   "animationCustom" : {
     "animatedParts" : { "parts" : { "bow" : { "properties" : {
@@ -34,7 +35,7 @@
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
-    "class" : "gprotBowShot",
+    "class" : "GProtBowShot",
 	
 	"fireOffset" : [0.75, 0],
 
@@ -98,7 +99,7 @@
 
   "altAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
-    "class" : "gprotBowShot",
+    "class" : "GProtBowShot",
 	
 	"fireOffset" : [0.75, 0],
 
