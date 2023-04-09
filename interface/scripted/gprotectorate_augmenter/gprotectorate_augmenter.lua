@@ -98,16 +98,15 @@ function attemptAugment()
 	  moduleElementalType = moduleConfig.parameters.elementalType or moduleConfig.config.elementalType
 	end
   elseif self.essenceCost > 0 then
-	if item and itemConfig.parameters.elementalType then
+	if item then
 	  local elementList = {}
 	  for _, element in ipairs(self.elementalTypes) do
-	    if itemConfig.parameters.elementalType ~= element then
+	    if (itemConfig.parameters.elementalType or "") ~= element then
 		  table.insert(elementList, element)
 		end
 	  end
 	  moduleCheck = true
       moduleElementalType = elementList[math.random(#elementList)]
-	  sb.logInfo("%s, %s", elementList, moduleElementalType)
 	end
   end
   

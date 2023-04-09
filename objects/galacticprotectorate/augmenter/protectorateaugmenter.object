@@ -28,7 +28,7 @@
       "direction" : "left",
       "flipImages" : true,
 
-      "spaceScan" : 0.1,
+      "spaceScan" : 0.2,
       "anchors" : [ "bottom" ]
     },
     {
@@ -37,7 +37,7 @@
 
       "direction" : "right",
 
-      "spaceScan" : 0.1,
+      "spaceScan" : 0.2,
       "anchors" : [ "bottom" ]
     }
   ],
