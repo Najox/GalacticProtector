@@ -14,19 +14,23 @@ end
 function onInteraction(args)
   local interactOverrides = {}
   if not self.crafted then
-    interactOverrides.itemSlot2 = {
-        type = "itemslot",
-        position = {67, 105},
-        dimensions = {1, 1},
-        spacing = {0, 0},
-        backingImage = "/interface/inventory/empty.png"
-      }
-    interactOverrides.unavailableSlotImage = {
-        type = "image",
-        file = "/interface/scripted/gprotectorate_augmenter/noelement.png",
-        position = {107, 105},
-        zlevel = 5
- 	  }
+    local gui = {}
+    gui.itemSlot2 = {
+      type = "image",
+      file = "/interface/scripted/gprotectorate_augmenter/unavailble.png",
+      position = {107, 105},
+      zlevel = 5
+ 	}
+	gui.essenceIcon = {
+      type = "image",
+      file = "/interface/inventory/essenceicon.png",
+      position = {88, 114},
+      zlevel = 5
+    }
+	gui.windowtitle = { title = " Ancient Augmenter" }
+	gui.infoLabel = { value = "Use essence to augment Protector weapons" }
+    interactOverrides.gui = gui
+	interactOverrides.essenceCost = 2500
   end
   local newData = sb.jsonMerge(root.assetJson(config.getParameter("interactData")), interactOverrides)
 

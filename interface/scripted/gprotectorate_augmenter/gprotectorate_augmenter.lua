@@ -2,6 +2,9 @@ require "/scripts/util.lua"
 
 function init()
   self.noElement = config.getParameter("noElementImage", "/assetmissing.png")
+  self.randElement = config.getParameter("randElementImage", "/assetmissing.png")
+  self.elementalTypes = config.getParameter("elementalTypes", {"fire", "ice", "poison", "electric"})
+  self.essenceCost = config.getParameter("essenceCost", 0)
 end
 
 function update(dt)
@@ -34,7 +37,7 @@ function update(dt)
   local moduleCheck = false
   local moduleElementalType = nil
   
-  if module then
+  if module and self.essenceCost == 0 then
 	if root.itemHasTag(moduleConfig.config.itemName, "gprotectorate_module") then
 	  moduleCheck = true
 	end
@@ -46,6 +49,10 @@ function update(dt)
 	  widget.setImage("moduleElementImage", self.noElement)
 	  moduleElementalType = nil
 	end
+  elseif self.essenceCost > 0 then
+	moduleCheck = true
+	widget.setImage("moduleElementImage", self.randElement)
+	widget.setText("essenceLabel", self.essenceCost)
   else
 	widget.setImage("moduleElementImage", self.noElement)
 	moduleElementalType = nil
@@ -55,7 +62,9 @@ function update(dt)
   local enableButton = false
   
   if itemCheck and moduleCheck then
-	if itemElementalType and moduleElementalType then
+    if self.essenceCost > 0 then
+	  enableButton = true
+	elseif itemElementalType and moduleElementalType then
 	  if moduleElementalType ~= itemElementalType then
 		enableButton = true
 	  end
@@ -83,14 +92,26 @@ function attemptAugment()
   local moduleCheck = false
   local moduleElementalType = nil
   
-  if module then
+  if module and self.essenceCost == 0 then
 	if root.itemHasTag(moduleConfig.config.itemName, "gprotectorate_module") and (moduleConfig.parameters.elementalType or moduleConfig.config.elementalType) then
 	  moduleCheck = true
 	  moduleElementalType = moduleConfig.parameters.elementalType or moduleConfig.config.elementalType
 	end
+  elseif self.essenceCost > 0 then
+	if item and itemConfig.parameters.elementalType then
+	  local elementList = {}
+	  for _, element in ipairs(self.elementalTypes) do
+	    if itemConfig.parameters.elementalType ~= element then
+		  table.insert(elementList, element)
+		end
+	  end
+	  moduleCheck = true
+      moduleElementalType = elementList[math.random(#elementList)]
+	  sb.logInfo("%s, %s", elementList, moduleElementalType)
+	end
   end
   
-  if itemCheck and moduleCheck then
+  if itemCheck and moduleCheck and player.consumeCurrency("essence", self.essenceCost) then
 	if moduleElementalType ~= itemElementalType then
 	  createAugmentedItem(itemConfig, moduleElementalType)
 	end
