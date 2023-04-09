@@ -1,0 +1,23 @@
+{
+  "projectileName" : "protectorhandgun_largeshot",
+  "physics" : "default",
+  "bounces" : 0,
+  "piercing" : true,
+  "image" : "largeshot.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 42,
+  "speed" : 300,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnodamage.config"
+    }
+  ],
+  "lightColor" : [79, 175, 178],
+  "fullbright" : true,
+  "acceptsProcessing" : true,
+  "damageKind" : "plasma",
+  "persistentAudio" : "/sfx/gun/mech_teslastream_fire1.ogg"
+}

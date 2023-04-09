@@ -1,0 +1,105 @@
+{
+  "itemName" : "gprotector_protectorgreatsword",
+  "price" : 1250,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An heavier version of the Protector's Broadsword made for crushing more than cutting",
+  "shortdescription" : "Protector's Great Sword",
+  "tooltipKind" : "sword",
+  "category" : "Greatsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "melee", "greatsword", "gprotector_moduleweapon"],
+
+  "inventoryIcon" : "gprotector_protectorgreatsword.png:inactive<elementalDirectives>",
+
+  "animation" : "/items/active/weapons/melee/protectorate/gprotector_empoweredsword.animation",
+  "animationParts" : {
+    "sword" : "gprotector_protectorgreatsword.png",
+    "swordfullbright" : "gprotector_protectorgreatswordfullbright.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/protectorate/protectoratebroadsword/protectoratebroadsword.lua", "/items/active/weapons/gprotector_elementalcolouring.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 1.5,
+    "baseDps" : 11,
+
+    "animKeyPrefix" : "inactive",
+	
+    "damageConfig" : {
+      "damageSourceKind" : "<elementalType>broadsword",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+
+    "stances" : {
+      "idle" : {
+        "aimAngle" : 0
+      }
+	}
+  },
+
+  "inactiveBaseDps" : 11,
+  "activeBaseDps" : 13,
+
+  "altAbility" : {
+    "name" : "Empowerment",
+    "type" : "empowerment",
+    "scripts" : ["/items/active/weapons/melee/protectorate/gprotector_empowerment.lua"],
+    "class" : "Empowerment",
+
+    "energyPerSecond" : 20,
+
+    "projectileOffset" : [1, 0],
+    "projectileType" : "gprotector_energytravelingswoosh",
+	"projectileParameters" : {
+	  "processing" : "<elementalDirectives>",
+	  "damageKind" : "<elementalType>broadsword",
+	  "statusEffects" : [ "<elementalEffect>" ]
+	},
+    "baseDamage" : 18,
+
+    "cooldownTime" : 1.0,
+
+    "stances" : {
+      "empower" : {
+        "durationBefore" : 0.2,
+        "durationAfter" : 0.5,
+        "armRotation" : 90,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "weaponOffset" : [0.5, -0.375],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup" : {
+        "duration" : 0.25,
+        "armRotation" : 70,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/gprotector_buildunrandweapon.lua"
+}

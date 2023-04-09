@@ -9,16 +9,15 @@
   "tooltipKind" : "sword",
   "category" : "Broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee", "broadsword"],
+  "itemTags" : ["weapon", "melee", "broadsword", "gprotector_moduleweapon"],
 
-  "inventoryIcon" : "lightswordicon.png",
+  "inventoryIcon" : "lightswordicon.png<elementalDirectives>",
 
-  "animation" : "/animations/protectorate/protectorlightsword/lightsword.animation",
+  "animation" : "/items/active/weapons/melee/protectorate/gprotector_energysword.animation",
   "animationParts" : {
     "handle" : "handle.png",
-    "handleFullbright" : "handlefullbright.png",
-    "blade" : "blade.png",
-    "swordfullbright" : "bladefullbright.png"
+    "handleFullbright" : "",
+    "blade" : "blade.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -28,7 +27,7 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua", "/items/active/weapons/gprotector_elementalcolouring.lua"],
 
   "activeTime" : 5.0,
 
@@ -39,7 +38,17 @@
     "fireTime" : 0.83,
     "baseDps" : 12,
 
+    "damageConfig" : {
+      "damageSourceKind" : "<elementalType>broadsword",
+      "statusEffects" : [ "<elementalEffect>" ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+	
     "stances" : {
+      "idle" : {
+        "aimAngle" : 0
+      },
       "windup1" : {
         "duration" : 0.15
       }
@@ -55,32 +64,25 @@
     "energyUsage": 60,
 
     "projectileOffset" : [1, 0],
-    "projectileType" : "energytravelingswoosh",
+    "projectileType" : "gprotector_energytravelingswoosh",
+	"projectileParameters" : {
+	  "processing" : "<elementalDirectives>",
+	  "damageKind" : "<elementalType>broadsword",
+	  "statusEffects" : [ "<elementalEffect>" ]
+	},
     "baseDamage" : 12,
 
     "cooldownTime" : 1.0,
 
     "stances" : {
-      "empower" : {
-        "durationBefore" : 0.2,
-        "durationAfter" : 0.5,
-        "armRotation" : 90,
-        "weaponRotation" : -90,
-        "twoHanded" : true,
-
-        "weaponOffset" : [0.5, -0.375],
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      },
       "windup" : {
         "duration" : 0.25,
         "armRotation" : 70,
         "weaponRotation" : 0,
         "twoHanded" : true,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "allowRotate" : true,
+        "allowFlip" : true
       },
       "fire" : {
         "duration" : 0.4,
@@ -94,5 +96,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/gprotector_buildunrandweapon.lua"
 }

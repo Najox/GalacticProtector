@@ -1,15 +1,19 @@
-LightingStrike = WeaponAbility:new()
+Empowerment = WeaponAbility:new()
 
-function LightingStrike:init()
+function Empowerment:init()
   self.cooldownTimer = self.cooldownTime
-  
-  self.active = true
+
+  self.active = false
 end
 
-function LightingStrike:update(dt, fireMode, shiftHeld)
+function Empowerment:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
+
+  if self.active and not status.overConsumeResource("energy", self.energyPerSecond * self.dt) then
+    self.active = false
+  end
 
   if fireMode == "alt"
       and not self.weapon.currentAbility
@@ -24,7 +28,18 @@ function LightingStrike:update(dt, fireMode, shiftHeld)
   end
 end
 
-function LightingStrike:windup()
+function Empowerment:empower()
+  self.weapon:setStance(self.stances.empower)
+
+  util.wait(self.stances.empower.durationBefore)
+
+  animator.playSound("empower")
+  self.active = true
+
+  util.wait(self.stances.empower.durationAfter)
+end
+
+function Empowerment:windup()
   self.weapon:setStance(self.stances.windup)
   self.weapon:updateAim()
 
@@ -33,7 +48,7 @@ function LightingStrike:windup()
   self:setState(self.fire)
 end
 
-function LightingStrike:fire()
+function Empowerment:fire()
   self.weapon:setStance(self.stances.fire)
   self.weapon:updateAim()
 
@@ -46,23 +61,24 @@ function LightingStrike:fire()
   world.spawnProjectile(self.projectileType, position, activeItem.ownerEntityId(), self:aimVector(), false, params)
 
   animator.playSound("slash")
-  status.overConsumeResource("energy", self.energyUsage)
-  
+  status.overConsumeResource("energy", status.resourceMax("energy"))
+  self.active = false
+
   util.wait(self.stances.fire.duration)
 
   self.cooldownTimer = self.cooldownTime
 end
 
-function LightingStrike:uninit()
+function Empowerment:uninit()
 
 end
 
-function LightingStrike:aimVector()
+function Empowerment:aimVector()
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(self.inaccuracy or 0, 0))
   aimVector[1] = aimVector[1] * self.weapon.aimDirection
   return aimVector
 end
 
-function LightingStrike:damageAmount()
+function Empowerment:damageAmount()
   return self.baseDamage * config.getParameter("damageLevelMultiplier")
 end

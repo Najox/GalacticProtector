@@ -58,5 +58,6 @@
   "power" : 20,
   "knockback" : 10,
   "knockbackDirectional" : true,
+  "acceptsProcessing" : true,
   "damageKind" : "bow"
 }

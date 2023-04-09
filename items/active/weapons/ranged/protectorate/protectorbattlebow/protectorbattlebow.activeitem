@@ -1,19 +1,19 @@
 {
   "itemName" : "gprotector_protectorbattlebow",
   "price" : 960,
-  "inventoryIcon" : "protectorbattlebowicon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
+  "level" : 6,
   "tooltipKind" : "base",
   "category" : "bow",
   "description" : "A secret weapon made by the Galactic Protectorate for infiltration mission.",
   "shortdescription" : "Protector's Plasma Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon", "ranged", "bow"],
+  "itemTags" : ["weapon", "ranged", "bow", "gprotector_moduleweapon"],
 
   "radioMessagesOnPickup" : [ "pickupbow" ],
 
-  "level" : 6,
+  "inventoryIcon" : "protectorbattlebowicon.png<elementalDirectives>",
 
   "animation" : "/items/active/weapons/ranged/protectorate/protectorhuntingbow/gprotectorate-bow.animation",
   "animationParts" : {
@@ -39,7 +39,7 @@
   "scripts" : ["/items/active/weapons/bow/bow.lua"],
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua"],
+    "scripts" : ["/items/active/weapons/ranged/abilities/gprotectorate-bowshot.lua", "/items/active/weapons/gprotector_elementalcolouring.lua"],
     "class" : "GProtBowShot",
 	
 	"fireOffset" : [0.75, 0],
@@ -66,12 +66,14 @@
     "projectileType" : "protectorbattlearrow",
     "projectileParameters" : {
       "speed" : 80,
-      "power" : 7.0
+      "power" : 7.0,
+	  "statusEffects" : [ "<elementalEffect>" ]
     },
     "powerProjectileType" : "chargedprotectorbattlearrow",
     "powerProjectileParameters" : {
       "speed" : 100,
-      "power" : 9.0
+      "power" : 9.0,
+	  "statusEffects" : [ "<elementalEffect>" ]
     },
 
     "stances" : {
@@ -132,12 +134,17 @@
     "projectileType" : "gprotector_lightarrow",
     "projectileParameters" : {
       "speed" : 90,
-      "power" : 7.0
+      "power" : 7.0,
+	  "damageKind" : "<elementalType>plasma",
+	  "statusEffects" : [ "<elementalEffect>" ]
     },
     "powerProjectileType" : "gprotector_chargedlightarrow",
     "powerProjectileParameters" : {
       "speed" : 90,
-      "power" : 9.0
+      "power" : 9.0,
+	  "processing" : "<elementalDirectives>",
+	  "damageKind" : "<elementalType>plasma",
+	  "statusEffects" : [ "<elementalEffect>" ]
     },
 
     "stances" : {
@@ -170,5 +177,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/gprotector_buildunrandweapon.lua"
 }

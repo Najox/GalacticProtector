@@ -7,6 +7,8 @@
   "damageKindImage" : "icon.png",
   "physics" : "boomerang",
   "speed" : 100,
+  "fullbright" : true,
+  "acceptsProcessing" : true,
   "emitters" : [ "energyshot" ],
   "actionOnReap" : [
     {
