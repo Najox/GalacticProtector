@@ -77,7 +77,7 @@
     "parts" : {
       "blade" : {
         "properties" : {
-          "zLevel" : 0,
+          "zLevel" : 2,
           "centered" : true,
           "fullbright" : true,
           "offset" : [0, 1.875],
