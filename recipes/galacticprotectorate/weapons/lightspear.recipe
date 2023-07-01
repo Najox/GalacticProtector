@@ -2,8 +2,8 @@
   "input" : [
     { "item" : "titaniumspear", "count" : 1 },
     { "item" : "diamond", "count" : 1 },
-    { "item" : "refinedviolium", "count" : 15 },
-    { "item" : "solariumstar", "count" : 10 }
+    { "item" : "refinedferozium", "count" : 10 },
+    { "item" : "solariumstar", "count" : 6 }
   ],
   "output" : { "item" : "gprotector_lightspear", "count" : 1 },
   "groups" : [ "gprotector_protectoratefabricator", "weapons", "melee", "all" ]

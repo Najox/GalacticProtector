@@ -2,7 +2,7 @@
   "input" : [
     { "item" : "gprotector_protectoratefabricator", "count" : 1 },
     { "item" : "diamond", "count" : 1 },
-    { "item" : "gprotectorate_physicalprotectoratemodule", "count" : 5 },
+    { "item" : "gprotectorate_physicalprotectoratemodule", "count" : 1 },
     { "item" : "gprotectorate_fireprotectoratemodule", "count" : 1 },
     { "item" : "gprotectorate_poisonprotectoratemodule", "count" : 1 },
     { "item" : "gprotectorate_iceprotectoratemodule", "count" : 1 },

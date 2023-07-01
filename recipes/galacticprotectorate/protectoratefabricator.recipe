@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "craftinganvil", "count" : 1 }
+    { "item" : "craftinganvil", "count" : 1 },
+    { "item" : "titaniumbar", "count" : 10 }
   ],
   "output" : { "item" : "gprotector_protectoratefabricator", "count" : 1 },
   "groups" : [ "inventorstable2", "craftingstations", "all" ]

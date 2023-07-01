@@ -1,8 +1,8 @@
 {
   "input" : [
-    { "item" : "durasteelbar", "count" : 5 },
+    { "item" : "durasteelbar", "count" : 1 },
     { "item" : "titaniumbar", "count" : 3 },
-    { "item" : "phasematter", "count" : 15 }
+    { "item" : "phasematter", "count" : 5 }
   ],
   "output" : { "item" : "gprotectorate_physicalprotectoratemodule", "count" : 1 },
   "groups" : [ "gprotector_protectoratefabricator", "survival", "tools" ]

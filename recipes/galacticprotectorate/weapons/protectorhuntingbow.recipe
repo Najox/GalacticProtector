@@ -1,8 +1,8 @@
 {
   "input" : [
     { "item" : "compoundbow", "count" : 1 },
-    { "item" : "durasteelbar", "count" : 20 },
-    { "item" : "titaniumbar", "count" : 15 },
+    { "item" : "durasteelbar", "count" : 6 },
+    { "item" : "titaniumbar", "count" : 10 },
     { "item" : "leather", "count" : 3 },
     { "item" : "string", "count" : 5 }
   ],
