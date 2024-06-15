@@ -13,7 +13,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+      "file" : "/projectiles/explosions/chargedprotectorbattlearrow/chargedprotectorbattlearrowlargeexplosion.config"
     }
   ],
   "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
