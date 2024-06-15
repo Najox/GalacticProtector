@@ -22,7 +22,7 @@
   "inventoryIcon" : "protectorateaugmentericon.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "console.png:<color>:player" }, { "image" : "consolefullbright.png:<color>:player", "fullbright" : true } ],
+	  "imageLayers" : [ { "image" : "console.png:<color>.player" }, { "image" : "consolefullbright.png:<color>.player", "fullbright" : true } ],
       "imagePosition" : [0, 0],
 
       "direction" : "left",
@@ -32,7 +32,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-	  "imageLayers" : [ { "image" : "console.png:<color>:player" }, { "image" : "consolefullbright.png:<color>:player", "fullbright" : true } ],
+	  "imageLayers" : [ { "image" : "console.png:<color>.player" }, { "image" : "consolefullbright.png:<color>.player", "fullbright" : true } ],
       "imagePosition" : [0, 0],
 
       "direction" : "right",
